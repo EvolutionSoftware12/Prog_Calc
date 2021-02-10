@@ -30,8 +30,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  sonarCloudTrigger:
-        name: SonarCloud Trigger
+  sonarcloud:
+        name: sonarcloud
         runs-on: ubuntu-20.04
         steps:
            - name: Clone Repository
