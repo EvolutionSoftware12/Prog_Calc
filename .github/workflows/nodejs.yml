@@ -31,12 +31,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   sonarcloud:
-        name: sonarcloud
+       
         runs-on: ubuntu-latest
         steps:
            - name: Clone Repository
              uses: actions/checkout@master
-           - name: Analyze with SonarCloud
+           - name: SonarCloud Scan
              uses: sonarsource/sonarcloud-github-action@master
              env:
                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
