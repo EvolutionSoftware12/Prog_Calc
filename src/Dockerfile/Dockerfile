@@ -2,7 +2,7 @@ FROM node:10
 
 RUN npm install -g ionic
 RUN npm install 
-RUN apt get update
+RUN apt-get update
 RUN apt install -y git
 RUN mkdir /home/TestCode
 CMD cd /home/TestCode
