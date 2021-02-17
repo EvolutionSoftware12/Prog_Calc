@@ -64,6 +64,6 @@ jobs:
           - name: Login to Docker Hub
             run: docker login --username "${{ secrets.DOCKER_USERNAME }}" --password "${{ secrets.DOCKER_PASSWORD }}"
           - name: Build the Docker Image 
-            run: docker build --file Dockerfile --tag d2ask39fns39rdnkjasvbnal2/mynodejs
+            run: docker build ./ --file Dockerfile --tag d2ask39fns39rdnkjasvbnal2/mynodejs
           - name: Push the Docker Image 
             run: docker push d2ask39fns39rdnkjasvbnal2/mynodejs
